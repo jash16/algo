@@ -12,6 +12,10 @@ static void _fibheap_link(fibheap *h, fibnode *n, fibnode *r);
 static void _fibheap_cons_make(fibheap *h);
 static fibnode *_fibnode_remove_min(fibheap *h);
 static void _fibheap_consolidate(fibheap *h);
+static void _fibheap_cut(fibheap *h);
+static void _fibheap_cascading_cut(fibheap *h);
+static void _fibheap_decrease(fibheap *h, fibheap *n, void *key);
+static void _fibheap_renew_degree(fibnode *n, int degree);
 
 static void _fibnode_add(fibnode *n, fibnode *root) {
     n->left = root->left;
@@ -219,7 +223,7 @@ fibnode *fibheap_extract_min(fibheap *h) {
         } else {
             min->child = child->right;
         }
-        _fibnode_add(h->min, child);
+        _fibnode_add(child, h->min);
         child->parent = NULL;
     }
 
@@ -235,3 +239,43 @@ fibnode *fibheap_extract_min(fibheap *h) {
     return min;
 }
 
+static void _fibheap_cut(fibheap *h, fibnode *n, fibnode *p) {
+    _fibnode_remove(n);
+    parent->degree --;
+
+    if (n == n->right) {
+        parent->child = NULL;
+    } else if (parent->child == n) {
+        parent->child = n->right;
+    }
+    n->parent = NULL;
+    n->marked = 0;
+    n->left = n->right = n;
+    _fibnode_add(n, h->min);
+}
+
+static void _fibheap_decrease(fibheap *h, fibnode *n, void *key) {
+    fibnode *parent;
+
+    if (h == NULL || h->min == NULL || n == NULL) {
+        return;
+    }
+
+    if (h->type->key_cmp(n->key, key) > 0) {
+        return;  
+    }
+
+    FIBNODE_FREE_KEY(h, n);
+    FIBNODE_SET_KEY(h, n, key);
+
+    parent = n->parent;
+    if (h->type->key_cmp(h->min->key, n->key) > 0) {
+        _fibheap_cut(h, n, parent);
+        _fibheap_cascading_cut(h, parent);
+    }
+
+    if (h->type->key_cmp(h->min->key, n->key) > 0) {
+        h->min = n;
+    }
+    return;
+}
