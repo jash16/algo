@@ -1,0 +1,408 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLACK	rbtree.h	8;"	d
+DL_START_HEAD	dlist.h	60;"	d
+DL_START_TAIL	dlist.h	61;"	d
+FALSE	bool.h	7;"	d
+HASHMAP_DEFAULT_SIZE	hashmap.h	4;"	d
+HEAP_MIN_SIZE	heap.h	9;"	d
+MAX_HEAP	heap.h	7;"	d
+MAX_LEVEL	skiplist.h	5;"	d
+MIN_HEAP	heap.h	6;"	d
+RBNODE_BLACK	rbtree.h	82;"	d
+RBNODE_COLOR	rbtree.h	81;"	d
+RBNODE_KEY	rbtree.h	75;"	d
+RBNODE_LCHILD	rbtree.h	78;"	d
+RBNODE_PARENT	rbtree.h	77;"	d
+RBNODE_RCHILD	rbtree.h	79;"	d
+RBNODE_RED	rbtree.h	83;"	d
+RBNODE_VAL	rbtree.h	76;"	d
+RBTREE_SIZE	rbtree.h	74;"	d
+RED	rbtree.h	7;"	d
+STACK_DEFAULT_SIZE	stack.h	6;"	d
+TRUE	bool.h	6;"	d
+VECTOR_DEFAULT_SIZE	vector.h	6;"	d
+__BOOL_H__	bool.h	2;"	d
+__DLIST_H__	dlist.h	2;"	d
+__HASH_MAP_H__	hashmap.h	2;"	d
+__HEAP_H__	heap.h	2;"	d
+__MAP_H__	map.h	2;"	d
+__PAIR_H__	pair.h	2;"	d
+__QUEUE_H__	queue.h	2;"	d
+__RBTREE_H__	rbtree.h	2;"	d
+__SET_H__	set.h	2;"	d
+__SHARE_H__	share.h	2;"	d
+__SKIPLIST_H__	skiplist.h	2;"	d
+__SLIST_H__	slist.h	2;"	d
+__STACK_H__	stack.h	2;"	d
+__VECTOR_H__	vector.h	2;"	d
+_max_heapfy_down	heap.c	/^void _max_heapfy_down(heap *h, int idx) {$/;"	f
+_max_heapfy_up	heap.c	/^static void _max_heapfy_up(heap *h, int idx) {$/;"	f	file:
+_min_heapfy_down	heap.c	/^static void _min_heapfy_down(heap *h, int idx) {$/;"	f	file:
+_min_heapfy_up	heap.c	/^static void _min_heapfy_up(heap *h, int idx) {$/;"	f	file:
+_rbtree_delete_balance	rbtree.c	/^static void _rbtree_delete_balance(rbtree *t, rbnode *x) {$/;"	f	file:
+_rbtree_insert_balance	rbtree.c	/^static void _rbtree_insert_balance(rbtree *t, rbnode *z) {$/;"	f	file:
+_rbtree_left_rotate	rbtree.c	/^static void _rbtree_left_rotate(rbtree *t, rbnode *z) {$/;"	f	file:
+_rbtree_maximum	rbtree.c	/^static rbnode *_rbtree_maximum(rbtree *t, rbnode *x) {$/;"	f	file:
+_rbtree_minimum	rbtree.c	/^static rbnode *_rbtree_minimum(rbtree *t, rbnode *x) {$/;"	f	file:
+_rbtree_release_recur	rbtree.c	/^static void _rbtree_release_recur(rbtree *t, rbnode *root) {$/;"	f	file:
+_rbtree_right_rotate	rbtree.c	/^static void _rbtree_right_rotate(rbtree *t, rbnode *x) {$/;"	f	file:
+_rbtree_transplant	rbtree.c	/^static void _rbtree_transplant(rbtree *t, rbnode *u, rbnode *v) {$/;"	f	file:
+_t	map.h	/^    rbtree *_t;$/;"	m	struct:map
+_t	set.h	/^    rbtree *_t;$/;"	m	struct:set
+begin	rbtree.h	/^    int begin;$/;"	m	struct:rbtree_iterator
+bool	bool.h	/^typedef int bool;$/;"	t
+cmp	heap.h	/^    int (*cmp)(void *ptr, void *ptr2);\/\/ >0 ptr > ptr2; <0 ptr < ptr2, =0 ptr == ptr2$/;"	m	struct:heap_type
+cmp	vector.h	/^    int (*cmp)(void *ptr1, void *ptr2);$/;"	m	struct:vector_type
+cmp_key	hashmap.h	/^    int (*cmp_key)(const void *key1, const void *key2);$/;"	m	struct:hashmap_type
+cmp_val	hashmap.h	/^    int (*cmp_val)(const void *val1, const void *val2);$/;"	m	struct:hashmap_type
+color	rbtree.h	/^    int color;$/;"	m	struct:rbnode
+demo_type	map.c	/^rbtree_type demo_type = { $/;"	v
+demo_type	rbtree.c	/^rbtree_type demo_type = {$/;"	v
+demo_type	set.c	/^rbtree_type demo_type = { $/;"	v
+demo_type	skiplist.c	/^skiplist_type demo_type = {$/;"	v
+dequeue	queue.c	/^void *dequeue(queue *q) {$/;"	f
+direction	dlist.h	/^    int direction;$/;"	m	struct:dlist_iterator
+dlist	dlist.h	/^typedef struct dlist {$/;"	s
+dlist	dlist.h	/^}dlist;$/;"	t	typeref:struct:dlist
+dlist_add_node_head	dlist.c	/^dlist *dlist_add_node_head(dlist *list, void *value) {$/;"	f
+dlist_add_node_tail	dlist.c	/^dlist *dlist_add_node_tail(dlist *list, void *value) {$/;"	f
+dlist_create	dlist.c	/^dlist *dlist_create() {$/;"	f
+dlist_del_node	dlist.c	/^void dlist_del_node(dlist *list, dlist_node *node) {$/;"	f
+dlist_dup	dlist.c	/^dlist *dlist_dup(dlist *orig) {$/;"	f
+dlist_first	dlist.h	26;"	d
+dlist_get_iterator	dlist.c	/^dlist_iterator *dlist_get_iterator(dlist *list, int direction) {$/;"	f
+dlist_index	dlist.c	/^dlist_node *dlist_index(dlist *list, long index) {$/;"	f
+dlist_insert_node	dlist.c	/^dlist *dlist_insert_node(dlist *list, dlist_node *old, void *value, int after) {$/;"	f
+dlist_iterator	dlist.h	/^typedef struct dlist_iterator {$/;"	s
+dlist_iterator	dlist.h	/^} dlist_iterator;$/;"	t	typeref:struct:dlist_iterator
+dlist_last	dlist.h	27;"	d
+dlist_length	dlist.h	25;"	d
+dlist_next	dlist.c	/^dlist_node *dlist_next(dlist_iterator *di) {$/;"	f
+dlist_next_node	dlist.h	29;"	d
+dlist_node	dlist.h	/^typedef struct dlist_node {$/;"	s
+dlist_node	dlist.h	/^}dlist_node;$/;"	t	typeref:struct:dlist_node
+dlist_node_free	dlist.h	36;"	d
+dlist_node_value	dlist.h	30;"	d
+dlist_prev_node	dlist.h	28;"	d
+dlist_release	dlist.c	/^void dlist_release(dlist *list) {$/;"	f
+dlist_release_iterator	dlist.c	/^void dlist_release_iterator(dlist_iterator *di) {$/;"	f
+dlist_rewind	dlist.c	/^void dlist_rewind(dlist *list, dlist_iterator *di) {$/;"	f
+dlist_rewind_tail	dlist.c	/^void dlist_rewind_tail(dlist *list, dlist_iterator *di) {$/;"	f
+dlist_rotate	dlist.c	/^void dlist_rotate(dlist *list) {$/;"	f
+dlist_search_key	dlist.c	/^dlist_node *dlist_search_key(dlist *list, void *key) {$/;"	f
+dlist_set_dup_method	dlist.h	32;"	d
+dlist_set_free_method	dlist.h	33;"	d
+dlist_set_match_method	dlist.h	34;"	d
+dup	dlist.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:dlist
+dup	heap.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:heap_type
+dup	queue.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:queue_type
+dup	slist.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:slist
+dup	vector.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:vector_type
+dup_key	hashmap.h	/^    void *(*dup_key)(const void *key);$/;"	m	struct:hashmap_type
+dup_val	hashmap.h	/^    void *(*dup_val)(const void *val);$/;"	m	struct:hashmap_type
+ele	heap.h	/^    void **ele;$/;"	m	struct:heap
+ele	queue.h	/^    void **ele;$/;"	m	struct:queue
+ele	stack.h	/^    void **ele;$/;"	m	struct:stack
+ele	vector.h	/^    void **ele;$/;"	m	struct:vector
+end	rbtree.h	/^    int end;$/;"	m	struct:rbtree_iterator
+enqueue	queue.c	/^bool enqueue(queue *q, void *value) {$/;"	f
+entry_key	hashmap.h	29;"	d
+entry_val	hashmap.h	28;"	d
+false	bool.h	9;"	d
+first	pair.c	/^void *first(pair *p) {$/;"	f
+first	pair.h	/^    void *first;$/;"	m	struct:pair
+first_cmp	pair.h	/^    int (*first_cmp)(void *fir1, void *fir2);$/;"	m	struct:pair_type
+first_free	pair.h	/^    void (*first_free)(void *first);$/;"	m	struct:pair_type
+flag	heap.h	/^    int flag;$/;"	m	struct:heap
+forward	skiplist.h	/^    struct skipnode *forward[0];$/;"	m	struct:skipnode	typeref:struct:skipnode::skipnode
+free	dlist.h	/^    void (*free)(void *ptr);$/;"	m	struct:dlist
+free	heap.h	/^    void (*free)(void *ptr);$/;"	m	struct:heap_type
+free	queue.h	/^    void (*free)(void *ptr);$/;"	m	struct:queue_type
+free	slist.h	/^    void (*free)(void *ptr);$/;"	m	struct:slist
+free	stack.h	/^    void (*free)(void *ptr);$/;"	m	struct:stack_type
+free	vector.h	/^    void (*free)(void *ptr);$/;"	m	struct:vector_type
+free_key	hashmap.h	/^    void (*free_key) (void *key);$/;"	m	struct:hashmap_type
+free_pair	pair.c	/^void free_pair(pair *p) {$/;"	f
+free_val	hashmap.h	/^    void (*free_val)(void *val);$/;"	m	struct:hashmap_type
+hash_entry	hashmap.h	/^typedef struct hash_entry {$/;"	s
+hash_entry	hashmap.h	/^} hash_entry;$/;"	t	typeref:struct:hash_entry
+hashmap	hashmap.h	/^typedef struct hashmap {$/;"	s
+hashmap	hashmap.h	/^} hashmap;$/;"	t	typeref:struct:hashmap
+hashmap_type	hashmap.h	/^typedef struct hashmap_type {$/;"	s
+hashmap_type	hashmap.h	/^} hashmap_type;$/;"	t	typeref:struct:hashmap_type
+head	dlist.h	/^    dlist_node *head;$/;"	m	struct:dlist
+head	queue.h	/^    int head;$/;"	m	struct:queue
+head	slist.h	/^    struct slist_node *head;$/;"	m	struct:slist	typeref:struct:slist::slist_node
+header	skiplist.h	/^    struct skipnode *header;$/;"	m	struct:skiplist	typeref:struct:skiplist::skipnode
+heap	heap.h	/^typedef struct heap {$/;"	s
+heap	heap.h	/^} heap;$/;"	t	typeref:struct:heap
+heap_create	heap.c	/^heap *heap_create(int size, int flag, heap_type *ht) {$/;"	f
+heap_insert	heap.c	/^bool heap_insert(heap *h, void *value) {$/;"	f
+heap_make	heap.c	/^void heap_make(heap *h) {$/;"	f
+heap_pop	heap.c	/^void *heap_pop(heap *h) {$/;"	f
+heap_release	heap.c	/^void heap_release(heap *h) {$/;"	f
+heap_sort	heap.c	/^void heap_sort(heap *h) {$/;"	f
+heap_type	heap.h	/^typedef struct heap_type {$/;"	s
+heap_type	heap.h	/^} heap_type;$/;"	t	typeref:struct:heap_type
+ht	hashmap.h	/^    hash_type *ht;$/;"	m	struct:hashmap
+ht	heap.h	/^    heap_type *ht;$/;"	m	struct:heap
+idx	vector.h	/^    int idx;    $/;"	m	struct:vector_iterator
+int_cmp	heap.c	/^int int_cmp(void *ptr, void *ptr2) {$/;"	f
+int_cmp	pair.c	/^int int_cmp(void *p1, void *p2) {$/;"	f
+int_cmp	vector.c	/^int int_cmp(void *ptr1, void *ptr2) {$/;"	f
+int_heap_type	heap.c	/^struct heap_type int_heap_type = {$/;"	v	typeref:struct:heap_type
+int_pair	pair.c	/^struct pair_type int_pair = {$/;"	v	typeref:struct:pair_type
+int_string_pair	pair.c	/^struct pair_type int_string_pair = {$/;"	v	typeref:struct:pair_type
+int_vtype	vector.c	/^struct vector_type int_vtype = {$/;"	v	typeref:struct:vector_type
+iter	map.h	/^    void *iter;$/;"	m	struct:map_iterator
+key	hashmap.h	/^    void *key;$/;"	m	struct:hash_entry
+key	rbtree.h	/^    void *key;$/;"	m	struct:rbnode
+key	skiplist.h	/^    void *key;$/;"	m	struct:skipnode
+key_cmp	map.c	/^int key_cmp(const void *key1, const void *key2) {$/;"	f
+key_cmp	rbtree.c	/^int key_cmp(const void *key1, const void *key2) {$/;"	f
+key_cmp	rbtree.h	/^    int (*key_cmp)(const void *key1, const void *key2);$/;"	m	struct:rbtree_type
+key_cmp	set.c	/^int key_cmp(const void *key1, const void *key2) {$/;"	f
+key_cmp	skiplist.c	/^int key_cmp(void *key1, void *key2) {$/;"	f
+key_cmp	skiplist.h	/^    int (*key_cmp)(void *key1, void *key2);$/;"	m	struct:skiplist_type
+key_dup	rbtree.c	/^char *key_dup(const void *key) {$/;"	f
+key_dup	rbtree.h	/^    void *(*key_dup)(const void *key);$/;"	m	struct:rbtree_type
+key_free	map.c	/^void key_free(void *key) {$/;"	f
+key_free	rbtree.c	/^void key_free(void *key) {$/;"	f
+key_free	rbtree.h	/^    void (*key_free)(void *key);$/;"	m	struct:rbtree_type
+key_free	set.c	/^void key_free(void *key) {$/;"	f
+key_free	skiplist.c	/^void key_free(void *key) {$/;"	f
+key_free	skiplist.h	/^    void (*key_free)(void *key);$/;"	m	struct:skiplist_type
+left	rbtree.h	/^    struct rbnode *left;$/;"	m	struct:rbnode	typeref:struct:rbnode::rbnode
+len	dlist.h	/^    unsigned long len;$/;"	m	struct:dlist
+len	slist.h	/^    unsigned long len;$/;"	m	struct:slist
+length	skiplist.h	/^    int length;$/;"	m	struct:skiplist
+level	skiplist.h	/^    int level;$/;"	m	struct:skiplist
+main	dlist.c	/^int main() {$/;"	f
+main	heap.c	/^int main() {$/;"	f
+main	map.c	/^int main() {$/;"	f
+main	pair.c	/^int main() {$/;"	f
+main	queue.c	/^int main() {$/;"	f
+main	rbtree.c	/^int main() {$/;"	f
+main	set.c	/^int main() {$/;"	f
+main	skiplist.c	/^int main() {$/;"	f
+main	slist.c	/^int main() {$/;"	f
+main	stack.c	/^int main() {$/;"	f
+main	vector.c	/^int main() {$/;"	f
+make_pair	pair.c	/^pair *make_pair(void *first, void *second, pair_type *pt) {$/;"	f
+map	map.h	/^typedef struct map {$/;"	s
+map	map.h	/^} map;$/;"	t	typeref:struct:map
+map_count	map.c	/^int map_count(map *m, const void *key) {$/;"	f
+map_create	map.c	/^map *map_create(void *type) {$/;"	f
+map_delete	map.c	/^bool map_delete(map *m, void *key) {$/;"	f
+map_empty	map.c	/^bool map_empty(map *m) {$/;"	f
+map_erase	map.c	/^bool map_erase(map *m, void *key) {$/;"	f
+map_find	map.c	/^void *map_find(map *m, const void *key) {$/;"	f
+map_get_iterator	map.c	/^map_iterator *map_get_iterator(map *m) {$/;"	f
+map_insert	map.c	/^bool map_insert(map *m, void *key, void *val) {$/;"	f
+map_iterator	map.h	/^typedef struct map_iterator {$/;"	s
+map_iterator	map.h	/^} map_iterator;$/;"	t	typeref:struct:map_iterator
+map_next	map.c	/^void *map_next(map_iterator *mi) {$/;"	f
+map_release	map.c	/^void map_release(map *m) {$/;"	f
+map_release_iterator	map.c	/^void map_release_iterator(map_iterator *mi) {$/;"	f
+map_size	map.h	16;"	d
+map_type	map.h	18;"	d
+mask	hashmap.h	/^    int mask;$/;"	m	struct:hashmap
+match	dlist.h	/^    bool (*match)(void *ptr, void *ptr2);$/;"	m	struct:dlist
+match	heap.h	/^    bool (*match)(void *ptr1, void *ptr2); \/\/ true ptr == ptr2$/;"	m	struct:heap_type
+match	slist.h	/^    bool (*match)(void *ptr1, void *ptr2);$/;"	m	struct:slist
+next	dlist.h	/^    struct dlist_node *next;$/;"	m	struct:dlist_iterator	typeref:struct:dlist_iterator::dlist_node
+next	dlist.h	/^    struct dlist_node *next;$/;"	m	struct:dlist_node	typeref:struct:dlist_node::dlist_node
+next	hashmap.h	/^    struct hash_entry *next;$/;"	m	struct:hash_entry	typeref:struct:hash_entry::hash_entry
+next	slist.h	/^    struct slist_node *next;$/;"	m	struct:slist_iterator	typeref:struct:slist_iterator::slist_node
+next	slist.h	/^    struct slist_node *next;$/;"	m	struct:slist_node	typeref:struct:slist_node::slist_node
+nil	rbtree.h	/^    rbnode nil;   $/;"	m	struct:rbtree
+node	rbtree.h	/^    struct rbnode *node;$/;"	m	struct:rbtree_iterator	typeref:struct:rbtree_iterator::rbnode
+pair	pair.h	/^typedef struct pair {$/;"	s
+pair	pair.h	/^} pair;$/;"	t	typeref:struct:pair
+pair_cmp	pair.c	/^int pair_cmp(pair *p1, pair *p2) {$/;"	f
+pair_type	pair.h	/^typedef struct pair_type {$/;"	s
+pair_type	pair.h	/^} pair_type;$/;"	t	typeref:struct:pair_type
+parent	rbtree.h	/^    struct rbnode *parent;$/;"	m	struct:rbnode	typeref:struct:rbnode::rbnode
+prev	dlist.h	/^    struct dlist_node *prev;$/;"	m	struct:dlist_node	typeref:struct:dlist_node::dlist_node
+pt	pair.h	/^    pair_type *pt;$/;"	m	struct:pair
+qt	queue.h	/^    queue_type *qt;$/;"	m	struct:queue
+queue	queue.h	/^typedef struct queue {$/;"	s
+queue	queue.h	/^} queue;$/;"	t	typeref:struct:queue
+queue_create	queue.c	/^queue *queue_create(int size, queue_type *qt) {$/;"	f
+queue_empty	queue.c	/^bool queue_empty(queue *q) {$/;"	f
+queue_front	queue.h	36;"	d
+queue_full	queue.c	/^bool queue_full(queue *q) {$/;"	f
+queue_release	queue.c	/^void queue_release(queue *q) {$/;"	f
+queue_size	queue.c	/^int queue_size(queue *q) {$/;"	f
+queue_type	queue.h	/^typedef struct queue_type {$/;"	s
+queue_type	queue.h	/^} queue_type;$/;"	t	typeref:struct:queue_type
+rand_range	map.c	/^int rand_range(int a, int b) {$/;"	f
+rand_range	rbtree.c	/^int rand_range(int a, int b) {$/;"	f
+rand_range	set.c	/^int rand_range(int a, int b) {$/;"	f
+rand_range	skiplist.c	/^int rand_range(int a, int b) {$/;"	f
+random_level	skiplist.c	/^int random_level() {$/;"	f
+rbnode	rbtree.h	/^typedef struct rbnode {$/;"	s
+rbnode	rbtree.h	/^} rbnode;$/;"	t	typeref:struct:rbnode
+rbnode_free	rbtree.h	64;"	d
+rbtree	rbtree.h	/^typedef struct rbtree {$/;"	s
+rbtree	rbtree.h	/^}rbtree;$/;"	t	typeref:struct:rbtree
+rbtree_clear	rbtree.c	/^void rbtree_clear(rbtree *t) {$/;"	f
+rbtree_clone_node	rbtree.c	/^rbnode *rbtree_clone_node(rbtree *t, rbnode *node) {$/;"	f
+rbtree_count	rbtree.c	/^int rbtree_count(rbtree *t, const void *key) {$/;"	f
+rbtree_create	rbtree.c	/^rbtree *rbtree_create(rbtree_type *rt) {$/;"	f
+rbtree_delete	rbtree.c	/^bool rbtree_delete(rbtree *t, void *key) {$/;"	f
+rbtree_find	rbtree.c	/^rbnode *rbtree_find(rbtree *t, const void *key) {$/;"	f
+rbtree_get_iterator	rbtree.c	/^rbtree_iterator *rbtree_get_iterator(rbtree *t) {$/;"	f
+rbtree_insert	rbtree.c	/^bool rbtree_insert(rbtree *t, void *key, void *value) {$/;"	f
+rbtree_iterator	rbtree.h	/^typedef struct rbtree_iterator {$/;"	s
+rbtree_iterator	rbtree.h	/^}rbtree_iterator;$/;"	t	typeref:struct:rbtree_iterator
+rbtree_next	rbtree.c	/^rbnode *rbtree_next(rbtree_iterator *ri) {$/;"	f
+rbtree_prev	rbtree.c	/^rbnode *rbtree_prev(rbtree_iterator *ri) {$/;"	f
+rbtree_release	rbtree.c	/^void rbtree_release(rbtree *t) {$/;"	f
+rbtree_release_iterator	rbtree.c	/^void rbtree_release_iterator(rbtree_iterator *ri) {$/;"	f
+rbtree_root	rbtree.c	/^rbnode *rbtree_root(rbtree *t) {$/;"	f
+rbtree_type	rbtree.h	/^typedef struct rbtree_type {$/;"	s
+rbtree_type	rbtree.h	/^} rbtree_type;$/;"	t	typeref:struct:rbtree_type
+right	rbtree.h	/^    struct rbnode *right;$/;"	m	struct:rbnode	typeref:struct:rbnode::rbnode
+root	rbtree.h	/^    rbnode *root;$/;"	m	struct:rbtree
+rt	rbtree.h	/^    rbtree_type *rt;$/;"	m	struct:rbtree
+second	pair.c	/^void *second(pair *p) {$/;"	f
+second	pair.h	/^    void *second;$/;"	m	struct:pair
+second_cmp	pair.h	/^    int (*second_cmp)(void *sec1, void *sec2);$/;"	m	struct:pair_type
+second_free	pair.h	/^    void (*second_free)(void *second);$/;"	m	struct:pair_type
+set	set.h	/^typedef struct set {$/;"	s
+set	set.h	/^} set;$/;"	t	typeref:struct:set
+set_add	set.c	/^bool set_add(set *s, void *value) {$/;"	f
+set_clear	set.c	/^void set_clear(set *s) {$/;"	f
+set_create	set.c	/^set *set_create(void *type) {$/;"	f
+set_delete	set.c	/^bool set_delete(set *s, void *value) {$/;"	f
+set_erase	set.c	/^bool set_erase(set *s, void *value) {$/;"	f
+set_find	set.c	/^void *set_find(set *s, const void *value) {$/;"	f
+set_iterator	set.h	/^typedef struct set_iterator {$/;"	s
+set_iterator	set.h	/^} set_iterator;$/;"	t	typeref:struct:set_iterator
+set_size	set.h	29;"	d
+size	hashmap.h	/^    int size;$/;"	m	struct:hashmap
+size	heap.h	/^    int size;$/;"	m	struct:heap
+size	queue.h	/^    int size;$/;"	m	struct:queue
+size	rbtree.h	/^    int size;$/;"	m	struct:rbtree
+size	stack.h	/^    int size;$/;"	m	struct:stack
+size	vector.h	/^    int size;$/;"	m	struct:vector
+skiplist	skiplist.h	/^typedef struct skiplist {$/;"	s
+skiplist	skiplist.h	/^} skiplist;$/;"	t	typeref:struct:skiplist
+skiplist_create	skiplist.c	/^skiplist *skiplist_create(skiplist_type *st) {$/;"	f
+skiplist_delete	skiplist.c	/^bool skiplist_delete(skiplist *sl, void *key) {$/;"	f
+skiplist_insert	skiplist.c	/^bool skiplist_insert(skiplist *sl, void *key, void *val) {$/;"	f
+skiplist_release	skiplist.c	/^void skiplist_release(skiplist *sl) {$/;"	f
+skiplist_search	skiplist.c	/^skipnode *skiplist_search(skiplist *sl, void *key) {$/;"	f
+skiplist_type	skiplist.h	/^typedef struct skiplist_type {$/;"	s
+skiplist_type	skiplist.h	/^}skiplist_type;$/;"	t	typeref:struct:skiplist_type
+skiplist_visit	skiplist.c	/^void skiplist_visit(skiplist *sl) {$/;"	f
+skipnode	skiplist.h	/^typedef struct skipnode {$/;"	s
+skipnode	skiplist.h	/^} skipnode;$/;"	t	typeref:struct:skipnode
+skipnode_create	skiplist.c	/^skipnode *skipnode_create(int level, void *key, void *val) {$/;"	f
+slist	slist.h	/^typedef struct slist {$/;"	s
+slist	slist.h	/^}slist;$/;"	t	typeref:struct:slist
+slist_add_node_head	slist.c	/^slist *slist_add_node_head(slist *list, void *value) {$/;"	f
+slist_add_node_tail	slist.c	/^slist *slist_add_node_tail(slist *list, void *value) {$/;"	f
+slist_create	slist.c	/^slist *slist_create() {$/;"	f
+slist_del_node	slist.c	/^void slist_del_node(slist *list, slist_node *sn) {$/;"	f
+slist_dup	slist.c	/^slist *slist_dup(slist *orig) {$/;"	f
+slist_first	slist.h	26;"	d
+slist_get_iterator	slist.c	/^slist_iterator *slist_get_iterator(slist *list) {$/;"	f
+slist_index	slist.c	/^slist_node *slist_index(slist *list, long index) {$/;"	f
+slist_insert_node	slist.c	/^slist *slist_insert_node(slist *list, slist_node *old, void *value, int after) {$/;"	f
+slist_iterator	slist.h	/^typedef struct slist_iterator {$/;"	s
+slist_iterator	slist.h	/^}slist_iterator;$/;"	t	typeref:struct:slist_iterator
+slist_last	slist.h	27;"	d
+slist_length	slist.h	25;"	d
+slist_next	slist.c	/^slist_node *slist_next(slist_iterator *si) {$/;"	f
+slist_next_node	slist.h	28;"	d
+slist_node	slist.h	/^typedef struct slist_node {$/;"	s
+slist_node	slist.h	/^}slist_node;$/;"	t	typeref:struct:slist_node
+slist_node_free	slist.h	35;"	d
+slist_node_value	slist.h	29;"	d
+slist_release	slist.c	/^void slist_release(slist *list) {$/;"	f
+slist_release_iterator	slist.c	/^void slist_release_iterator(slist_iterator *si) {$/;"	f
+slist_rewind	slist.c	/^void slist_rewind(slist *list, slist_iterator *si) {$/;"	f
+slist_search	slist.c	/^slist_node *slist_search(slist *list, void *key) {$/;"	f
+slist_set_dup_method	slist.h	31;"	d
+slist_set_free_method	slist.h	32;"	d
+slist_set_match_method	slist.h	33;"	d
+st	skiplist.h	/^    struct skiplist_type *st;$/;"	m	struct:skiplist	typeref:struct:skiplist::skiplist_type
+st	stack.h	/^    stack_type *st;$/;"	m	struct:stack
+stack	stack.h	/^typedef struct stack {$/;"	s
+stack	stack.h	/^} stack;$/;"	t	typeref:struct:stack
+stack_create	stack.c	/^stack *stack_create(int size, stack_type *st) {$/;"	f
+stack_empty	stack.h	9;"	d
+stack_full	stack.h	8;"	d
+stack_pop	stack.c	/^void *stack_pop(stack *s) {$/;"	f
+stack_push	stack.c	/^bool stack_push(stack *s, void *data) {$/;"	f
+stack_release	stack.c	/^void stack_release(stack *s) {$/;"	f
+stack_size	stack.h	10;"	d
+stack_top	stack.c	/^void *stack_top(stack *s) {$/;"	f
+stack_type	stack.h	/^typedef struct stack_type {$/;"	s
+stack_type	stack.h	/^} stack_type;$/;"	t	typeref:struct:stack_type
+str_heap_type	heap.c	/^struct heap_type str_heap_type = {$/;"	v	typeref:struct:heap_type
+string_cmp	heap.c	/^int string_cmp(void *ptr, void *ptr2) {$/;"	f
+string_cmp	pair.c	/^int string_cmp(void *p1, void *p2) {$/;"	f
+t	rbtree.h	/^    struct rbtree *t;$/;"	m	struct:rbtree_iterator	typeref:struct:rbtree_iterator::rbtree
+table	hashmap.h	/^    hash_entry **table[2];$/;"	m	struct:hashmap
+tail	dlist.h	/^    dlist_node *tail;$/;"	m	struct:dlist
+tail	queue.h	/^    int tail;$/;"	m	struct:queue
+tail	slist.h	/^    struct slist_node *tail;$/;"	m	struct:slist	typeref:struct:slist::slist_node
+top	stack.h	/^    int top;$/;"	m	struct:stack
+tree_pre_visit	rbtree.c	/^void tree_pre_visit(rbtree *t, rbnode *root) {$/;"	f
+true	bool.h	8;"	d
+used	hashmap.h	/^    int used;$/;"	m	struct:hashmap
+used	heap.h	/^    int used;$/;"	m	struct:heap
+used	vector.h	/^    int used;$/;"	m	struct:vector
+v	vector.h	/^    struct vector *v;$/;"	m	struct:vector_iterator	typeref:struct:vector_iterator::vector
+val	hashmap.h	/^    void *val;$/;"	m	struct:hash_entry
+val	rbtree.h	/^    void *val;$/;"	m	struct:rbnode
+val	skiplist.h	/^    void *val;$/;"	m	struct:skipnode
+val_cmp	map.c	/^int val_cmp(const void *val1, const void *val2) {$/;"	f
+val_cmp	rbtree.c	/^int val_cmp(const void *val1, const void *val2) {$/;"	f
+val_cmp	rbtree.h	/^    int (*val_cmp)(const void *val1, const void *val2);$/;"	m	struct:rbtree_type
+val_cmp	set.c	/^int val_cmp(const void *val1, const void *val2) {$/;"	f
+val_cmp	skiplist.h	/^    int (*val_cmp)(void *val1, void *val2);$/;"	m	struct:skiplist_type
+val_dup	rbtree.c	/^char *val_dup(const void *val) {$/;"	f
+val_dup	rbtree.h	/^    void *(*val_dup)(const void *val);$/;"	m	struct:rbtree_type
+val_free	map.c	/^void val_free(void *val) {$/;"	f
+val_free	rbtree.c	/^void val_free(void *val) {$/;"	f
+val_free	rbtree.h	/^    void (*val_free)(void *val);$/;"	m	struct:rbtree_type
+val_free	set.c	/^void val_free(void *val) {$/;"	f
+val_free	skiplist.c	/^void val_free(void *val) {$/;"	f
+val_free	skiplist.h	/^    void (*val_free)(void *val);$/;"	m	struct:skiplist_type
+value	dlist.h	/^    void *value;$/;"	m	struct:dlist_node
+value	slist.h	/^    void *value;$/;"	m	struct:slist_node
+vector	vector.h	/^typedef struct vector {$/;"	s
+vector	vector.h	/^} vector;$/;"	t	typeref:struct:vector
+vector_back	vector.h	31;"	d
+vector_capacity	vector.h	28;"	d
+vector_clear	vector.c	/^bool vector_clear(vector *v) {$/;"	f
+vector_create	vector.c	/^vector *vector_create(int size, vector_type *vt) {$/;"	f
+vector_empty	vector.h	26;"	d
+vector_erase	vector.c	/^void vector_erase(vector *v, int pos1, int pos2) {$/;"	f
+vector_front	vector.h	30;"	d
+vector_get_idx	vector.c	/^void *vector_get_idx(vector *v, int idx) {$/;"	f
+vector_insert	vector.c	/^bool vector_insert(vector *v, int pos, int n, void *data) {$/;"	f
+vector_iterator	vector.h	/^typedef struct vector_iterator {$/;"	s
+vector_iterator	vector.h	/^} vector_iterator;$/;"	t	typeref:struct:vector_iterator
+vector_iterator_get	vector.c	/^vector_iterator *vector_iterator_get(vector *v) {$/;"	f
+vector_iterator_release	vector.c	/^void vector_iterator_release(vector_iterator *vi) {$/;"	f
+vector_iterator_rewind	vector.c	/^void vector_iterator_rewind(vector_iterator *vi) {$/;"	f
+vector_next	vector.c	/^void *vector_next(vector_iterator *vi) {$/;"	f
+vector_pop	vector.c	/^void *vector_pop(vector *v) {$/;"	f
+vector_push	vector.c	/^bool vector_push(vector *v, void *data) {$/;"	f
+vector_reinit	vector.c	/^vector *vector_reinit(vector *v) {$/;"	f
+vector_release	vector.c	/^void vector_release(vector *v) {$/;"	f
+vector_size	vector.h	27;"	d
+vector_top	vector.c	/^void *vector_top(vector *v) {$/;"	f
+vector_type	vector.h	/^typedef struct vector_type {$/;"	s
+vector_type	vector.h	/^}vector_type;$/;"	t	typeref:struct:vector_type
+vt	vector.h	/^    vector_type *vt;$/;"	m	struct:vector
